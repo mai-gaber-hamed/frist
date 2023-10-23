@@ -1,0 +1,10 @@
+<div class="bg-dark text-light p-5 text-center">
+  <div class="container">
+    <h1>our product</h1>
+    <button class="btn btn-warning mb-3"[routerLink]="['/form/0/edit']" >Add New</button>
+<div class="row">
+  <app-card-item *ngFor="let prod of arr" [prod2]="prod" (delEvent)="del($event)" class="col-3"></app-card-item>
+
+</div>
+</div>
+</div>

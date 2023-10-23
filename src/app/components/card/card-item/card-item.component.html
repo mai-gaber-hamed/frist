@@ -1,0 +1,16 @@
+<div class="c">
+    <div class="card">
+    <img src="assets/imgs/{{prod2.image}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{prod2.name}}</h5>
+      <p class="card-text">price: {{prod2.price}}</p>
+      <p class="card-text"> {{Quantity}}</p>
+<div class="btn-group my-1">
+  <div class="btn btn-info" [routerLink]="['/form',prod2.id,'edit']">Edit</div>
+  <div class="btn btn-danger" (click)="del()">Delete</div>
+</div>
+<div>
+<a href="#" class="btn btn-primary"[class.disabled]="Quantity=='No Product Avaliable'">{{btn}}</a>
+</div></div>
+  </div>
+</div>
